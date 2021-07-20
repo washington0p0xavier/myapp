@@ -7,35 +7,28 @@
 
     <fragment
         android:id="@+id/nav_login"
-        android:name="com.example.myappchamaeu.ui.home.HomeFragment"
+        android:name="com.example.myappchamaeu.ui.login.LoginFragment"
         android:label="@string/menu_login"
         tools:layout="@layout/fragment_login" >
         <action
-            android:id="@+id/action_nav_login_to_nav_cadastro_cliente"
-            app:destination="@id/nav_cadastro_cliente" />
-        <action
-            android:id="@+id/action_nav_login_to_nav_cadastro_prestador"
-            app:destination="@id/nav_cadastro_prestador" />
-        <action
             android:id="@+id/action_nav_login_to_nav_home"
             app:destination="@id/nav_home" />
+        <action
+            android:id="@+id/action_nav_login_to_nav_cadastro_opcao"
+            app:destination="@id/nav_cadastro_opcao" />
+        <action
+            android:id="@+id/action_nav_login_to_nav_home2"
+            app:destination="@id/nav_home" />
+        <action
+            android:id="@+id/action_nav_login_to_nav_pesquisa2"
+            app:destination="@id/nav_pesquisa" />
     </fragment>
 
     <fragment
         android:id="@+id/nav_home"
         android:name="com.example.myappchamaeu.ui.home.HomeFragment"
         android:label="@string/menu_home"
-        tools:layout="@layout/fragment_home" >
-        <action
-            android:id="@+id/action_nav_home_to_nav_pesquisa"
-            app:destination="@id/nav_pesquisa" />
-        <action
-            android:id="@+id/action_nav_home_to_nav_slideshow"
-            app:destination="@id/nav_slideshow" />
-        <action
-            android:id="@+id/action_nav_home_to_nav_gallery"
-            app:destination="@id/nav_gallery" />
-    </fragment>
+        tools:layout="@layout/fragment_home" />
 
     <fragment
         android:id="@+id/nav_gallery"
@@ -51,20 +44,44 @@
 
     <fragment
         android:id="@+id/nav_cadastro_prestador"
-        android:name="com.example.myappchamaeu.ui.home.HomeFragment"
+        android:name="com.example.myappchamaeu.ui.cadastro.Cadastro_Prestador"
         android:label="@string/menu_provider"
-        tools:layout="@layout/fragment_cadastro_prestador" />
+        tools:layout="@layout/fragment_cadastro_prestador" >
+        <action
+            android:id="@+id/action_nav_cadastro_prestador_to_nav_home"
+            app:destination="@id/nav_home" />
+    </fragment>
 
     <fragment
         android:id="@+id/nav_cadastro_cliente"
-        android:name="com.example.myappchamaeu.ui.home.HomeFragment"
+        android:name="com.example.myappchamaeu.ui.cadastro.CadastroCliente"
         android:label="@string/menu_cliente"
-        tools:layout="@layout/fragment_cadastro_cliente" />
+        tools:layout="@layout/fragment_cadastro_cliente" >
+        <action
+            android:id="@+id/action_nav_cadastro_cliente_to_nav_home"
+            app:destination="@id/nav_home" />
+        <action
+            android:id="@+id/action_nav_cadastro_cliente_to_nav_home2"
+            app:destination="@id/nav_home" />
+    </fragment>
 
     <fragment
         android:id="@+id/nav_pesquisa"
-        android:name="com.example.myappchamaeu.ui.home.HomeFragment"
+        android:name="com.example.myappchamaeu.ui.pesquisa.Pesquisa"
         android:label="@string/menu_pesquisa"
         tools:layout="@layout/fragment_pesquisa" />
+
+    <fragment
+        android:id="@+id/nav_cadastro_opcao"
+        android:name="com.example.myappchamaeu.ui.cadastro.Cadastro_opcao"
+        android:label="@string/menu_cadastro_opc"
+        tools:layout="@layout/fragment_cadastro_opcao" >
+        <action
+            android:id="@+id/action_nav_cadastro_opcao_to_nav_cadastro_cliente"
+            app:destination="@id/nav_cadastro_cliente" />
+        <action
+            android:id="@+id/action_nav_cadastro_opcao_to_nav_cadastro_prestador"
+            app:destination="@id/nav_cadastro_prestador" />
+    </fragment>
 
 </navigation>

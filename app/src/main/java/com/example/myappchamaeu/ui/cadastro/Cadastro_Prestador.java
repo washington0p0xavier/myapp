@@ -1,4 +1,4 @@
-package com.example.myappchamaeu;
+package com.example.myappchamaeu.ui.cadastro;
 
 import android.os.Bundle;
 
@@ -8,12 +8,14 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.example.myappchamaeu.R;
+
 /**
  * A simple {@link Fragment} subclass.
- * Use the {@link CadastroCliente#newInstance} factory method to
+ * Use the {@link Cadastro_Prestador#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class CadastroCliente extends Fragment {
+public class Cadastro_Prestador extends Fragment {
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -24,7 +26,7 @@ public class CadastroCliente extends Fragment {
     private String mParam1;
     private String mParam2;
 
-    public CadastroCliente() {
+    public Cadastro_Prestador() {
         // Required empty public constructor
     }
 
@@ -34,11 +36,11 @@ public class CadastroCliente extends Fragment {
      *
      * @param param1 Parameter 1.
      * @param param2 Parameter 2.
-     * @return A new instance of fragment CadastroCliente.
+     * @return A new instance of fragment Cadastro_Prestador.
      */
     // TODO: Rename and change types and number of parameters
-    public static CadastroCliente newInstance(String param1, String param2) {
-        CadastroCliente fragment = new CadastroCliente();
+    public static Cadastro_Prestador newInstance(String param1, String param2) {
+        Cadastro_Prestador fragment = new Cadastro_Prestador();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
@@ -59,6 +61,6 @@ public class CadastroCliente extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_cadastro_cliente, container, false);
+        return inflater.inflate(R.layout.fragment_cadastro_prestador, container, false);
     }
 }

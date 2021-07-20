@@ -1,9 +1,10 @@
-package com.example.myappchamaeu;
+package com.example.myappchamaeu.ui;
 
 import android.os.Bundle;
 import android.view.View;
 import android.view.Menu;
 
+import com.example.myappchamaeu.R;
 import com.google.android.material.snackbar.Snackbar;
 import com.google.android.material.navigation.NavigationView;
 
